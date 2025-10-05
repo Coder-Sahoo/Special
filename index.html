@@ -1,1 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Special Girl</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <div class="hearts-container" id="hearts-container"></div>
+    
+    <header>
+        <h1>For My Beautiful lady🫶🏻</h1>
+        <p class="subtitle">Each poster holds special messages 🤭just for you 🙆🏻‍♂</p>
+    </header>
+    
+    <div class="posters-container">
+        <!-- Poster 1 -->
+        <div class="poster">
+            <div class="poster-number">1</div>
+            <div class="poster-image">
+                <img src="C:\Users\Sahil\OneDrive\Pictures\wallpapers\729731.jpg" alt="Romantic Image">
+            </div>
+            <div class="poster-content">
+                <h2 class="poster-title">My Feelings for You</h2>
+                <div class="poster-message" id="message-1">
+                    From the moment I saw you👀, I knew you were special. Your smile brightens my darkest days😸.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Poster 2 -->
+        <div class="poster">
+            <div class="poster-number">2</div>
+            <div class="poster-image">
+                <img src="c:\Users\Sahil\OneDrive\Pictures\wallpapers\difx.png" alt="Couple Image">
+            </div>
+            <div class="poster-content">
+                <h2 class="poster-title">Why I Love You❓</h2>
+                <div class="poster-message" id="message-2">
+                    I love you not only for who you are but for who I am when I'm with you👫.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Poster 3 -->
+        <div class="poster">
+            <div class="poster-number">3</div>
+            <div class="poster-image">
+                <img src= "C:\Users\Sahil\OneDrive\Pictures\wallpapers\anohona.jpg" alt="Beautiful Woman">
+            </div>
+            <div class="poster-content">
+                <h2 class="poster-title">You Are Amazing😩</h2>
+                <div class="poster-message" id="message-3">
+                    Your strength, intelligence, and kindness inspire me every day🧣.Every time you fall you still get back in no time and i fall more and more for you🫠.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Poster 4 -->
+        <div class="poster">
+            <div class="poster-number">4</div>
+            <div class="poster-image">
+                <img src=c:\Users\Sahil\OneDrive\Pictures\wallpapers\ts.jpg alt="Smiling Woman">
+            </div>
+            <div class="poster-content">
+                <h2 class="poster-title">Us Together🥹</h2>
+                <div class="poster-message" id="message-4">
+                    I look many times we are like childish together🫂 and mature 😄to at a time hehe you know what it means😽.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Poster 5 -->
+        <div class="poster">
+            <div class="poster-number">5</div>
+            <div class="poster-image">
+                <img src="C:\Users\Sahil\OneDrive\Pictures\wallpapers\uus.jpg" alt="Romantic Sunset">
+            </div>
+            <div class="poster-content">
+                <h2 class="poster-title">My Promise🤞🏻</h2>
+                <div class="poster-message" id="message-5">
+                    I promise to always cherish and respect you through good times 🌞 and bad times ⛈ too, always try to hear you 🗣 no matter what's the situation is. Got it 🫳🏻.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Poster 6 -->
+        <div class="poster">
+            <div class="poster-number">6</div>
+            <div class="poster-image">
+                <img src="C:\Users\Sahil\OneDrive\Pictures\wallpapers\el.jpeg" alt="Beautiful Smile">
+            </div>
+            <div class="poster-content">
+                <h2 class="poster-title">Your Smile🫶🏻</h2>
+                <div class="poster-message" id="message-6">
+                    Your smile is my favorite sight in the world🤭For real. It lights up my entire day like flame in a dark room 🕯.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Poster 7 -->
+        <div class="poster">
+            <div class="poster-number">7</div>
+            <div class="poster-image">
+                <img src="C:\Users\Sahil\OneDrive\Pictures\wallpapers\your-name-5k-3840x2160-14943.jpg" alt="Woman in Nature">
+            </div>
+            <div class="poster-content">
+                <h2 class="poster-title">My Peace👘</h2>
+                <div class="poster-message" id="message-7">
+                    You're not just special, you're my peace🤍 and the person i wanna talk to everytime no matter if there is any topic or not just want your presence all the time🫂.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Poster 8 -->
+        <div class="poster">
+            <div class="poster-number">8</div>
+            <div class="poster-image">
+                <img src="C:\Users\Sahil\OneDrive\Pictures\wallpapers\march.png" alt="Holding Hands">
+            </div>
+            <div class="poster-content">
+                <h2 class="poster-title">Yours🤭</h2>
+                <div class="poster-message" id="message-8">
+                    My heart belongs to you today, tomorrow(As long as i am with you i've got smile on my face)👀.
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="action-container">
+        <button class="btn" id="done-btn">
+            <i class="fas fa-heart"></i> Wanna see more👉🏻👈🏻
+        </button>
+        <div class="counter" id="counter">Click here and see changes👀</div>
+    </div>
+    
+    <footer>
+        Made with <i class="fas fa-heart" style="color: #d32f2f;"></i> for my special girl👘
+    </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const doneBtn = document.getElementById('done-btn');
+            const counter = document.getElementById('counter');
+            const heartsContainer = document.getElementById('hearts-container');
+            
+            // All messages for the posters
+            const allMessages = [
+                [
+                    "From the moment I saw you👀, I knew you were special. Your smile brightens my darkest days😸.",
+                    "When I'm with you, time stands still. Everything else fades away 🪔.",
+                    "You have this incredible way of making me feel understood and appreciated 😸.",
+                    "I fall for you more every day, every minute, every second more and more🩵.",
+                    "Your presence in my life has brought me more joy than I ever thought (Arigato ne🤞🏻).",
+                    "Every day with you feels like a new adventure filled with love,laughter and fighting 🫳🏻.",
+                    "You've shown me what true connection feels like - deep, meaningful, and unconditional ♾.",
+                    "My love for you grows stronger with each sunrise and deeper with each sunset🌇."
+                ],
+                [
+                    "I love you not only for who you are but for who I am when I'm with you👫.",
+                    "Your love has transformed me in ways I never thought.🫶🏻",
+                    "I love the little things about you - the way your eyes light up when you're happy🥹.",
+                    "My love for you grows stronger with each passing day, in big and small ways😄.",
+                    "You've taught me the true meaning of unconditional love and acceptance.🧣",
+                    "I love how we can be completely ourselves with each other, without any masks.🤭",
+                    "Your love makes me feel safe, cherished, and understood in ways I never knew.👫",
+                    "I love every version of you - the happy, the sad, the silly, and the serious 🫰🏻."
+                ],
+                [
+                    "Your strength, intelligence, and kindness inspire me every day🧣.Every time you fall you still get back in no time and i fall more and more for you🫠.",
+                    "You're beautiful inside and out🤍(Pretty little baby👉🏻👈🏻).",
+                    "You have this radiant energy that lights up my world 🪔 .",
+                    "Your creativity and passion are incredibly attractive and inspiring 🌹.",
+                    "You already handled many challenges alone and stil facing many by keeping smile on your face🫂 (Mah fighter🥋).",
+                    "Your wisdom and perspective constantly help me see things in new ways.",
+                    "You have a beautiful soul that shines through in everything you do.",
+                    "Your resilience in facing obstacles inspires me to be a better person."
+                ],
+                [
+                    "I look many times we are like childish together🫂 and mature 😄to at a time hehe you know what it means😽.",
+                    "I dream of our future adventures 🌏🚶‍♀🚶🏻‍♂️ - the places we'll visit together🏖❤.",
+                    "No matter what the future holds, knowing I have you excites me 😊❤.",
+                    "I promise to always support your dreams 🌟 and celebrate your successes 🎉.",
+                    "I can't wait to create a lifetime of beautiful memories with you 💕📚.",
+                    "Our future together is my greatest hope 🌟 and most cherished dream 💤.",
+                    "I look forward to growing old with you 👴🏻 and sharing life's journey 🚶‍♀.",
+                    "Together, we can build a life filled with love ❤, laughter 😂, and adventure🎉."
+                ],
+                [
+                    "I promise to always cherish and respect you through good times 🌞 and bad times ⛈ too, always try to hear you 🗣 no matter what's the situation is. Got it 🫳🏻.",
+                    "I promise to be your safe harbor ⛴ in every storm ⛈ life brings our way 🌊.",
+                    "I promise to listen with an open heart ❤ and speak with kindness 💬 always.",
+                    "I promise to support your dreams 🌟 as passionately as I support my own 💪.",
+                    "I promise to grow with you 🌱, learn with you 📚, and build a beautiful life together 🏠.",
+                    "I promise to always be honest 💯, faithful 💕, and true to our love ❤.",
+                    "I promise to appreciate you every day 🌞 and never let you feel down",
+                    "I promise to love you completely 💗, today 🌟 and all our tomorrows 🌈."
+                ],
+                [
+                    "Your smile is my favorite sight in the world🤭For real. It lights up my entire day like flame in a dark room 🕯",
+                    "The sound of your laughter is the most beautiful music 🎶 to my ears 👂.",
+                    "Your smile 😊 has the power to turn my worst day 🌧 into something beautiful 💛.",
+                    "When you smile at me 😊, I feel like the luckiest person 🍀 in the world 🌎.",
+                    "Your joyful spirit ✨ and bright smile 😊 are pretty like you 🤩 it keeps me positive ⬆.",
+                    "That special smile you reserve just for me 😊 makes my heart ❤ skip a beat 💖.",
+                    "Your smile 😊 reflects the beautiful 💕, kind soul ❤ that you are inside.",
+                    "Even on my darkest days 🌑, the memory of your smile 😊 gives me hope ✨."
+                ],
+                [
+                    "You're not just special, you're my peace🤍 and the person i wanna talk to everytime no matter if there is any topic or not just want your presence all the time🫂.",
+                    "I love that we can talk 💬 for hours ⏰ or sit in comfortable silence together 👫.",
+                    "You're the first person I want to share good news 📰 with and bad news 🤕 too 🤗.",
+                    "With you, I've found not just a partner 👫 but my truest friend 💕 in life 🌟.",
+                    "Our friendship 💕 is the foundation 🏗 that makes our love ❤ so strong 💪 and lasting 🔥.",
+                    "I love that we can be completely silly 🤪 together without any judgment 🙅‍♂.",
+                    "You understand me 🤗 in ways no one else ever did or ever will 💯.",
+                    "Our connection 💫 goes beyond romance 💘 - it's a deep, soulful friendship 💕."
+                ],
+                [
+                    "My heart ❤ belongs to you today 🌟, tomorrow 🌞 (As long as I am with you, I've got a smile 😊 on my face) 👀.",
+                    "No matter where life 🌎 takes us, my love ❤ for you will remain constant 💯.",
+                    "You have captured my heart ❤ completely, and I never want it back 😊.",
+                    "My love ❤ for you is eternal 🔥, unwavering 💪, and grows stronger 💕 each day.",
+                    "You are my always ⏰ and forever ❤, my today 🌟 and all my tomorrows 🌞.",
+                    "My heart ❤ recognized yours from the moment we met 💫, and it's been yours ever since 💗.",
+                    "I give you my heart ❤ completely, trusting you to cherish it 💕 as I cherish yours 🤗.",
+                    "You are my forever love ❤, the one my soul 🫂 has been searching for all along 🔍."
+                ]
+            ];
+            
+            let messageSet = 0;
+            const totalMessageSets = 8;
+            
+            // Create floating hearts
+            function createHearts() {
+                for (let i = 0; i < 25; i++) {
+                    const heart = document.createElement('div');
+                    heart.innerHTML = '❤';
+                    heart.classList.add('heart');
+                    
+                    heart.style.left = Math.random() * 100 + 'vw';
+                    heart.style.animationDuration = (Math.random() * 10 + 5) + 's';
+                    heart.style.fontSize = (Math.random() * 20 + 15) + 'px';
+                    
+                    heartsContainer.appendChild(heart);
+                }
+            }
+            
+            // Update messages based on click count
+            function updateMessages() {
+                for (let i = 0; i < 8; i++) {
+                    document.getElementById(`message-${i+1}`).textContent = allMessages[i][messageSet];
+                }
+            }
+            
+            // Handle button click
+            doneBtn.addEventListener('click', function() {
+                if (messageSet < totalMessageSets - 1) {
+                    messageSet++;
+                    updateMessages();
+                    counter.textContent = `click click more messages are here (Baka🩵) (${messageSet+1}/${totalMessageSets})`;
+                    
+                    // Add hearts animation on click
+                    for (let i = 0; i < 10; i++) {
+                        const heart = document.createElement('div');
+                        heart.innerHTML = '❤';
+                        heart.classList.add('heart');
+                        
+                        heart.style.left = Math.random() * 100 + 'vw';
+                        heart.style.animationDuration = (Math.random() * 7 + 3) + 's';
+                        heart.style.fontSize = (Math.random() * 25 + 20) + 'px';
+                        
+                        heartsContainer.appendChild(heart);
+                    }
+                    
+                    // Change button text on last click
+                    if (messageSet === totalMessageSets - 1) {
+                        doneBtn.innerHTML = '<i class="fas fa-kiss-wink-heart"></i> I Love You🤭!';
+                        counter.textContent = "You've revealed all the messages🫶🏻";
+                    }
+                }
+            });
+            
+            // Initialize the page
+            createHearts();
+        });
+    </script>
+</body>
+</html>
