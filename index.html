@@ -133,6 +133,9 @@
         <button class="btn" id="done-btn">
             <i class="fas fa-heart"></i> Wanna see more👉🏻👈🏻
         </button>
+        <button class="btn read-again-btn" id="read-again-btn">
+            <i class="fas fa-redo"></i> Read Again🔄
+        </button>
         <div class="counter" id="counter">Click here and see changes👀</div>
     </div>
     
@@ -143,6 +146,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const doneBtn = document.getElementById('done-btn');
+            const readAgainBtn = document.getElementById('read-again-btn');
             const counter = document.getElementById('counter');
             const heartsContainer = document.getElementById('hearts-container');
             
@@ -229,7 +233,8 @@
                     "You are my forever love ❤, the one my soul 🫂 has been searching for all along 🔍."
                 ]
             ];
-             let messageSet = 0;
+            
+            let messageSet = 0;
             const totalMessageSets = 8;
             
             // Create floating hearts
@@ -288,6 +293,7 @@
                     if (messageSet === totalMessageSets - 1) {
                         doneBtn.innerHTML = '<i class="fas fa-kiss-wink-heart"></i> I Love You🤭!';
                         counter.textContent = "You've revealed all the messages🫶🏻";
+                        
                         // Show read again button after a short delay
                         setTimeout(() => {
                             doneBtn.style.display = 'none';
