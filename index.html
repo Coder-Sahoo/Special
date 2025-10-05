@@ -279,10 +279,18 @@
                     if (messageSet === totalMessageSets - 1) {
                         doneBtn.innerHTML = '<i class="fas fa-kiss-wink-heart"></i> I Love You🤭!';
                         counter.textContent = "You've revealed all the messages🫶🏻";
+                        // Show read again button after a short delay
+                        setTimeout(() => {
+                            doneBtn.style.display = 'none';
+                            readAgainBtn.style.display = 'inline-block';
+                        }, 1000);
                     }
                 }
             });
-            
+            // Handle read again button click
+            readAgainBtn.addEventListener('click', function() {
+                resetMessages();
+            });
             // Initialize the page
             createHearts();
         });
