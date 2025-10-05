@@ -229,8 +229,7 @@
                     "You are my forever love ❤, the one my soul 🫂 has been searching for all along 🔍."
                 ]
             ];
-            
-            let messageSet = 0;
+             let messageSet = 0;
             const totalMessageSets = 8;
             
             // Create floating hearts
@@ -253,6 +252,16 @@
                 for (let i = 0; i < 8; i++) {
                     document.getElementById(`message-${i+1}`).textContent = allMessages[i][messageSet];
                 }
+            }
+            
+            // Reset to first message set
+            function resetMessages() {
+                messageSet = 0;
+                updateMessages();
+                counter.textContent = "Click here and see changes👀";
+                doneBtn.innerHTML = '<i class="fas fa-heart"></i> Wanna see more👉🏻👈🏻';
+                readAgainBtn.style.display = 'none';
+                doneBtn.style.display = 'inline-block';
             }
             
             // Handle button click
@@ -287,10 +296,12 @@
                     }
                 }
             });
+            
             // Handle read again button click
             readAgainBtn.addEventListener('click', function() {
                 resetMessages();
             });
+            
             // Initialize the page
             createHearts();
         });
